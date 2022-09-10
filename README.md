@@ -8,6 +8,7 @@ As such, they can be loaded by client machines that have very slow internet conn
 
 The algorithm that transforms the array into a smooth image treats each value in the array as a coefficient of a 3D bell curve.
 The function that generates the color of a pixel in the heat map is the sum of the bell curves in the vicinity of the pixel.
+The algorithm is the most important part of this project, as it allows something that typically takes a very long time to generate to generate in O(pixels) time and O(1) space.
 
 This library could be very useful to local communities, especially in Miami, as it could be used to model dangerous weather events or rent prices.
 
